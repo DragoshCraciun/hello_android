@@ -9,4 +9,190 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Root layout theme. -->
+    <style name="RootLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Profile theme. -->
+    <style name="Profile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ProfileHeight</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="ProfileImage" parent="Profile">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/udacity</item>
+    </style>
+
+    <style name="ProfileGradient" parent="Profile">
+        <item name="android:background">@drawable/scrim_gradient</item>
+    </style>
+
+    <!-- Bar theme. -->
+    <style name="Bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/BarHeight</item>
+        <item name="android:layout_marginBottom">@dimen/BarMarginBottom</item>
+    </style>
+
+    <style name="BarStatus" parent="Bar">
+        <item name="android:layout_marginTop">@dimen/BarMarginTop</item>
+    </style>
+
+    <!-- Bar icons theme. -->
+    <style name="BarIcon">
+        <item name="android:layout_height">@dimen/IconHeight</item>
+        <item name="android:layout_width">@dimen/IconWidth</item>
+        <item name="android:padding">@dimen/IconPadding</item>
+    </style>
+
+    <style name="IconBack" parent="BarIcon">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:src">@drawable/ic_arrow_back_white_48dp</item>
+    </style>
+
+    <style name="IconEdit" parent="BarIcon">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/IconEditMarginRight</item>
+        <item name="android:src">@drawable/ic_mode_edit_white_48dp</item>
+    </style>
+
+    <style name="IconOptions" parent="BarIcon">
+        <item name="android:src">@drawable/ic_more_vert_white_48dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!-- Content icons theme. -->
+    <style name="ContentIcon">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/ContentIconWidth</item>
+        <item name="android:padding">@dimen/ContentIconPadding</item>
+    </style>
+
+    <style name="IconCall" parent="ContentIcon">
+        <item name="android:src">@drawable/ic_call_blue_48dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="IconWeb" parent="ContentIcon">
+        <item name="android:src">@drawable/ic_web_blue_48dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="IconLocation" parent="ContentIcon">
+        <item name="android:src">@drawable/ic_location_on_blue_48dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="IconHangouts" parent="ContentIcon">
+        <item name="android:src">@drawable/ic_hangouts_gray_48dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/ContentIconHangoutsMarginRight</item>
+    </style>
+
+    <!-- Spacer & Divider theme.  -->
+    <style name="Spacer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/SpacerHeight</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/DividerHeight</item>
+        <item name="android:layout_marginLeft">@dimen/DividerMarginLeft</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <!-- Title theme. -->
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextTitle" parent="Text">
+        <item name="android:paddingLeft">@dimen/TitlePaddingLeft</item>
+        <item name="android:text">Udacity</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/primaryTextLight</item>
+        <item name="android:textSize">@dimen/TitleTextSize</item>
+        <item name="android:fontFamily">regular</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <!-- Text theme. -->
+    <style name="TextItem" parent="Text">
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textSize">@dimen/TextSize</item>
+    </style>
+    
+    <style name="TextPhone" parent="TextItem">
+        <item name="android:text">(650) 555 - 5555</item>
+    </style>
+
+    <style name="TextWeb" parent="TextItem">
+        <item name="android:text">www.udacity.com</item>
+    </style>
+
+    <style name="TextAddress" parent="TextItem">
+        <item name="android:text">2465 Latham St \nMountain View, CA 94043</item>
+    </style>
+
+    <!-- Caption theme. -->
+    <style name="TextItemCaption" parent="Text">
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="android:textSize">@dimen/CaptionTextSize</item>
+    </style>
+
+    <style name="CaptionPhone" parent="TextItemCaption">
+        <item name="android:text">Phone</item>
+    </style>
+
+    <style name="CaptionWeb" parent="TextItemCaption">
+        <item name="android:text">Website</item>
+    </style>
+
+    <style name="CaptionAddress" parent="TextItemCaption">
+        <item name="android:text">Address</item>
+    </style>
+
+    <!-- Action button theme. -->
+    <style name="ActionButton">
+        <item name="android:layout_width">@dimen/ActionButtonWidth</item>
+        <item name="android:layout_height">@dimen/ActionButtonHeight</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_above">@id/content</item>
+        <item name="android:layout_marginBottom">@dimen/ActionButtonMarginBottom</item>
+        <item name="android:layout_marginRight">@dimen/ActionButtonMarginRight</item>
+        <item name="android:background">@drawable/ic_star_blue_48dp</item>
+    </style>
+
+    <!-- Content theme. -->
+    <style name="Content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@id/profile_image</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/ContentMarginTop</item>
+    </style>
+
+    <!-- List items theme. -->
+    <style name="ListItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ListItemsHeight</item>
+    </style>
+
+    <style name="ListItemText" parent="ListItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">@dimen/ListItemsMarginLeft</item>
+    </style>
+
+
 </resources>

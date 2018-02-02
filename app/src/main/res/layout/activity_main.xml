@@ -1,179 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/secondary"
-    android:orientation="vertical"
+    style="@style/RootLayout"
     tools:context="com.galacticcoders.helloandroid.MainActivity">
 
-    <ImageView
-        android:id="@+id/profile_image"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_alignParentTop="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/udacity" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/scrim_gradient"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp">
+    <RelativeLayout style="@style/RootLayout">
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:padding="13dp"
-            android:src="@drawable/ic_keyboard_backspace_black_48dp" />
+            android:id="@+id/profile_image"
+            style="@style/ProfileImage" />
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_toLeftOf="@id/more_options"
-            android:padding="13dp"
-            android:src="@drawable/ic_mode_edit_black_48dp" />
+        <ImageView style="@style/ProfileGradient" />
 
-        <ImageView
-            android:id="@+id/more_options"
-            android:layout_width="32dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:padding="13dp"
-            android:src="@drawable/ic_more_vert_black_48dp" />
+        <RelativeLayout style="@style/BarStatus">
+
+            <ImageView style="@style/IconBack" />
+
+            <ImageView style="@style/IconEdit" />
+
+            <ImageView style="@style/IconOptions" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/Bar"
+            android:layout_above="@id/content">
+
+            <TextView style="@style/TextTitle" />
+
+        </RelativeLayout>
+
+        <Button style="@style/ActionButton" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            style="@style/Content">
+
+
+            <RelativeLayout style="@style/ListItem">
+
+                <ImageView style="@style/IconCall" />
+
+                <LinearLayout style="@style/ListItemText">
+
+                    <TextView style="@style/TextPhone" />
+
+                    <TextView style="@style/CaptionPhone" />
+
+                </LinearLayout>
+
+                <ImageView style="@style/IconHangouts" />
+
+            </RelativeLayout>
+
+            <View style="@style/SpaceDivider" />
+
+            <View style="@style/Divider" />
+
+            <View style="@style/SpaceDivider" />
+
+            <RelativeLayout style="@style/ListItem">
+
+                <ImageView style="@style/IconWeb" />
+
+                <View style="@style/Spacer" />
+
+                <LinearLayout style="@style/ListItemText">
+
+                    <TextView style="@style/TextWeb" />
+
+                    <TextView style="@style/CaptionWeb" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/SpaceDivider" />
+
+            <View style="@style/Divider" />
+
+            <View style="@style/SpaceDivider" />
+
+            <RelativeLayout style="@style/ListItem">
+
+                <ImageView style="@style/IconLocation" />
+
+                <View style="@style/Spacer" />
+
+                <LinearLayout style="@style/ListItemText">
+
+                    <TextView style="@style/TextAddress" />
+
+                    <TextView style="@style/CaptionAddress" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/SpaceDivider" />
+
+            <View style="@style/Divider" />
+
+            <View style="@style/SpaceDivider" />
+
+        </LinearLayout>
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_above="@id/content">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Udacity"
-            android:paddingLeft="72dp"
-            android:textAllCaps="true"
-            android:textColor="@color/secondary"
-            android:textSize="34dp" />
-
-    </RelativeLayout>
-
-    <ImageView
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_gravity="bottom"
-        android:layout_above="@id/content"
-        android:layout_marginBottom="-28dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="16dp"
-        android:background="@drawable/favicon"
-        />
-
-
-    <LinearLayout
-        android:id="@+id/content"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/profile_image"
-        android:orientation="vertical">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp">
-
-            <View
-                android:layout_width="16dp"
-                android:layout_height="match_parent" />
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:padding="8dp"
-                android:src="@drawable/ic_call_black_48dp" />
-
-            <View
-                android:layout_width="16dp"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:text="650-555-5555"
-                android:textColor="@color/primaryText"
-                android:textSize="14dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp">
-
-            <View
-                android:layout_width="16dp"
-                android:layout_height="match_parent" />
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:padding="8dp"
-                android:src="@drawable/ic_web_black_48dp" />
-
-            <View
-                android:layout_width="16dp"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:text="www.udacity.com"
-                android:textColor="@color/primaryText"
-                android:textSize="14dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp">
-
-            <View
-                android:layout_width="16dp"
-                android:layout_height="match_parent" />
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:padding="8dp"
-                android:src="@drawable/ic_location_on_black_48dp" />
-
-            <View
-                android:layout_width="16dp"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:text="2465 Latham St \nMountain View, CA 94043"
-                android:textColor="@color/primaryText"
-                android:textSize="14dp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-</RelativeLayout>
+</ScrollView>
