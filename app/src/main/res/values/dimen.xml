@@ -16,6 +16,7 @@
     <dimen name="IconEditMarginRight">32dp</dimen>
     
     <!-- Content icons dimen. -->
+    <dimen name="ContentIconHeight">56dp</dimen>
     <dimen name="ContentIconWidth">56dp</dimen>
     <dimen name="ContentIconPadding">16dp</dimen>
     <dimen name="ContentIconHangoutsMarginRight">16dp</dimen>

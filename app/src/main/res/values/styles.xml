@@ -69,9 +69,10 @@
 
     <!-- Content icons theme. -->
     <style name="ContentIcon">
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">@dimen/ContentIconHeight</item>
         <item name="android:layout_width">@dimen/ContentIconWidth</item>
         <item name="android:padding">@dimen/ContentIconPadding</item>
+        <item name="android:layout_centerVertical">true</item>
     </style>
 
     <style name="IconCall" parent="ContentIcon">
@@ -118,7 +119,7 @@
 
     <style name="TextTitle" parent="Text">
         <item name="android:paddingLeft">@dimen/TitlePaddingLeft</item>
-        <item name="android:text">Udacity</item>
+        <item name="android:text">@string/Title</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">@color/primaryTextLight</item>
         <item name="android:textSize">@dimen/TitleTextSize</item>
@@ -133,15 +134,15 @@
     </style>
     
     <style name="TextPhone" parent="TextItem">
-        <item name="android:text">(650) 555 - 5555</item>
+        <item name="android:text">@string/TextPhone</item>
     </style>
 
     <style name="TextWeb" parent="TextItem">
-        <item name="android:text">www.udacity.com</item>
+        <item name="android:text">@string/TextWeb</item>
     </style>
 
     <style name="TextAddress" parent="TextItem">
-        <item name="android:text">2465 Latham St \nMountain View, CA 94043</item>
+        <item name="android:text">@string/TextAddress</item>
     </style>
 
     <!-- Caption theme. -->
@@ -151,15 +152,15 @@
     </style>
 
     <style name="CaptionPhone" parent="TextItemCaption">
-        <item name="android:text">Phone</item>
+        <item name="android:text">@string/CaptionPhone</item>
     </style>
 
     <style name="CaptionWeb" parent="TextItemCaption">
-        <item name="android:text">Website</item>
+        <item name="android:text">@string/CaptionWeb</item>
     </style>
 
     <style name="CaptionAddress" parent="TextItemCaption">
-        <item name="android:text">Address</item>
+        <item name="android:text">@string/CaptionAddress</item>
     </style>
 
     <!-- Action button theme. -->
@@ -184,7 +185,7 @@
 
     <!-- List items theme. -->
     <style name="ListItem">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/ListItemsHeight</item>
     </style>
 

@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">HelloAndroid</string>
+
+    <!-- Title string. -->
+    <string name="Title">Udacity</string>
+
+    <!-- Text string -->
+    <string name="TextPhone">(650) 555 - 5555</string>
+    <string name="TextWeb">www.udacity.com</string>
+    <string name="TextAddress">2465 Latham St \nMountain View, CA 94043</string>
+
+    <!-- Caption string -->
+    <string name="CaptionPhone">Phone</string>
+    <string name="CaptionWeb">Website</string>
+    <string name="CaptionAddress">Address</string>
+
 </resources>

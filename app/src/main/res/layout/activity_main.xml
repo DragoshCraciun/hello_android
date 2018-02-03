@@ -36,6 +36,8 @@
             android:id="@+id/content"
             style="@style/Content">
 
+            <View style="@style/Spacer" />
+
             <RelativeLayout style="@style/ListItem">
 
                 <ImageView style="@style/IconCall" />
