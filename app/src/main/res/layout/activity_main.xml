@@ -36,7 +36,6 @@
             android:id="@+id/content"
             style="@style/Content">
 
-
             <RelativeLayout style="@style/ListItem">
 
                 <ImageView style="@style/IconCall" />
@@ -53,17 +52,15 @@
 
             </RelativeLayout>
 
-            <View style="@style/SpaceDivider" />
+            <View style="@style/Spacer" />
 
             <View style="@style/Divider" />
 
-            <View style="@style/SpaceDivider" />
+            <View style="@style/Spacer" />
 
             <RelativeLayout style="@style/ListItem">
 
                 <ImageView style="@style/IconWeb" />
-
-                <View style="@style/Spacer" />
 
                 <LinearLayout style="@style/ListItemText">
 
@@ -75,17 +72,15 @@
 
             </RelativeLayout>
 
-            <View style="@style/SpaceDivider" />
+            <View style="@style/Spacer" />
 
             <View style="@style/Divider" />
 
-            <View style="@style/SpaceDivider" />
+            <View style="@style/Spacer" />
 
             <RelativeLayout style="@style/ListItem">
 
                 <ImageView style="@style/IconLocation" />
-
-                <View style="@style/Spacer" />
 
                 <LinearLayout style="@style/ListItemText">
 
@@ -97,11 +92,11 @@
 
             </RelativeLayout>
 
-            <View style="@style/SpaceDivider" />
+            <View style="@style/Spacer" />
 
             <View style="@style/Divider" />
 
-            <View style="@style/SpaceDivider" />
+            <View style="@style/Spacer" />
 
         </LinearLayout>
 

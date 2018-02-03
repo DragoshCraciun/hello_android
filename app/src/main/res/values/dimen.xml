@@ -1,2 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+
+    <!-- Profile dimen. -->
+    <dimen name="ProfileHeight">200dp</dimen>
+
+    <!-- Bar dimen -->
+    <dimen name="BarHeight">56dp</dimen>
+    <dimen name="BarMarginBottom">28dp</dimen>
+    <dimen name="BarMarginTop">24dp</dimen>
+    
+    <!-- Icons dimen. -->
+    <dimen name="IconHeight">48dp</dimen>
+    <dimen name="IconWidth">48dp</dimen>
+    <dimen name="IconPadding">12dp</dimen>
+    <dimen name="IconEditMarginRight">32dp</dimen>
+    
+    <!-- Content icons dimen. -->
+    <dimen name="ContentIconWidth">56dp</dimen>
+    <dimen name="ContentIconPadding">16dp</dimen>
+    <dimen name="ContentIconHangoutsMarginRight">16dp</dimen>
+
+    <!-- Spacer & divider dimen. -->
+    <dimen name="SpacerHeight">8dp</dimen>
+    <dimen name="DividerHeight">.2dp</dimen>
+    <dimen name="DividerMarginLeft">72dp</dimen>
+
+    <!-- Title dimen. -->
+    <dimen name="TitlePaddingLeft">72dp</dimen>
+    <dimen name="TitleTextSize">56sp</dimen>
+
+    <!-- Text dimen. -->
+    <dimen name="TextSize">16sp</dimen>
+
+    <!-- Caption dimen. -->
+    <dimen name="CaptionTextSize">14sp</dimen>
+
+    <!-- Action button dimen. -->
+    <dimen name="ActionButtonWidth">56dp</dimen>
+    <dimen name="ActionButtonHeight">56dp</dimen>
+    <dimen name="ActionButtonMarginBottom">-28dp</dimen>
+    <dimen name="ActionButtonMarginRight">16dp</dimen>
+
+    <!-- Content dimen. -->
+    <dimen name="ContentMarginTop">28dp</dimen>
+
+    <!-- List items dimen. -->
+    <dimen name="ListItemsHeight">72dp</dimen>
+    <dimen name="ListItemsMarginLeft">72dp</dimen>
+
+</resources>
