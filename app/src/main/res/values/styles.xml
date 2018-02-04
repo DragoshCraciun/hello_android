@@ -135,14 +135,17 @@
     
     <style name="TextPhone" parent="TextItem">
         <item name="android:text">@string/TextPhone</item>
+        <item name="android:autoLink">phone</item>
     </style>
 
     <style name="TextWeb" parent="TextItem">
         <item name="android:text">@string/TextWeb</item>
+        <item name="android:autoLink">web</item>
     </style>
 
     <style name="TextAddress" parent="TextItem">
         <item name="android:text">@string/TextAddress</item>
+        <item name="android:autoLink">map</item>
     </style>
 
     <!-- Caption theme. -->

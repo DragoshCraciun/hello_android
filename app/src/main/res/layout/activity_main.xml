@@ -44,7 +44,7 @@
 
                 <LinearLayout style="@style/ListItemText">
 
-                    <TextView style="@style/TextPhone" />
+                    <TextView style="@style/TextPhone" android:textStyle="bold" />
 
                     <TextView style="@style/CaptionPhone" />
 
