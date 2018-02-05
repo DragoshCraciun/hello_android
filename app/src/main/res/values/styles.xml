@@ -79,16 +79,19 @@
         <item name="android:src">@drawable/ic_call_blue_48dp</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:onClick">dialPhoneNumber</item>
     </style>
 
     <style name="IconWeb" parent="ContentIcon">
         <item name="android:src">@drawable/ic_web_blue_48dp</item>
         <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:onClick">openWebPage</item>
     </style>
 
     <style name="IconLocation" parent="ContentIcon">
         <item name="android:src">@drawable/ic_location_on_blue_48dp</item>
         <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:onClick">showMap</item>
     </style>
 
     <style name="IconHangouts" parent="ContentIcon">
@@ -135,17 +138,17 @@
     
     <style name="TextPhone" parent="TextItem">
         <item name="android:text">@string/TextPhone</item>
-        <item name="android:autoLink">phone</item>
+        <item name="android:onClick">dialPhoneNumber</item>
     </style>
 
     <style name="TextWeb" parent="TextItem">
         <item name="android:text">@string/TextWeb</item>
-        <item name="android:autoLink">web</item>
+        <item name="android:onClick">openWebPage</item>
     </style>
 
     <style name="TextAddress" parent="TextItem">
         <item name="android:text">@string/TextAddress</item>
-        <item name="android:autoLink">map</item>
+        <item name="android:onClick">showMap</item>
     </style>
 
     <!-- Caption theme. -->
